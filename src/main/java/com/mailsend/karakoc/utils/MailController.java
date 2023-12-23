@@ -13,7 +13,7 @@ public class MailController {
     @Autowired
     public MailController(MailService service) {
         this.service = service;
-    }git init
+    }
     @GetMapping("/sendMailWithoutAttachment")
     public String sendMailWithoutAttachment(){
         return service.sendMail();
